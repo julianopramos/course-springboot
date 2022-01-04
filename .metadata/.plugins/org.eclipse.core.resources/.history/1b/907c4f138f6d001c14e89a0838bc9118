@@ -1,0 +1,7 @@
+package br.com.fasttrack.course.entities;
+
+public class Order {
+	
+	private Integer id;
+
+}

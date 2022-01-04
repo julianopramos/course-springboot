@@ -1,0 +1,26 @@
+package br.com.fasttrack.course.entities;
+
+import java.time.Instant;
+import java.util.Objects;
+
+public class Order {
+	
+	private Long id;
+	private Instant moment;
+	
+	private User client;
+	
+	public Order() {
+		
+	}
+
+	public Order(Long id, Instant moment, User client) {
+		this.id = id;
+		this.moment = moment;
+		this.client = client;
+	}
+	
+	
+	
+
+}
