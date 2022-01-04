@@ -1,0 +1,5 @@
+package br.com.fasttrack.course.entities.enums;
+
+public class OrderStatus {
+
+}
