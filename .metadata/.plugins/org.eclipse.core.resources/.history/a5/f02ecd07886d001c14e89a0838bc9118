@@ -1,0 +1,14 @@
+package br.com.fasttrack.course.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import br.com.fasttrack.course.repositories.UserRepository;
+
+@Configuration
+@Profile("test")
+public class TestConfig {
+	
+	private UserRepository userRepository;
+
+}

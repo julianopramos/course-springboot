@@ -1,0 +1,5 @@
+package br.com.fasttrack.course.config;
+
+public class TestConfig {
+
+}
