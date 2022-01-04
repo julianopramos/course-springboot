@@ -1,0 +1,25 @@
+package br.com.fasttrack.course.entities;
+
+public class User {
+	
+	private Integer id;
+	private String name;
+	private String email;
+	private String number;
+	private String passwords;
+	
+	public User(){
+		
+	}
+
+	public User(Integer id, String name, String email, String number, String passwords) {
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.number = number;
+		this.passwords = passwords;
+	}
+	
+	
+
+}

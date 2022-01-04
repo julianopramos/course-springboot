@@ -1,0 +1,11 @@
+package br.com.fasttrack.course.entities;
+
+public class User {
+	
+	private Integer id;
+	private String name;
+	private String email;
+	private String number;
+	private String passwords;
+
+}
