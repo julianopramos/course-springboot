@@ -1,0 +1,19 @@
+package br.com.fasttrack.course.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.fasttrack.course.entities.User;
+import br.com.fasttrack.course.repositories.UserRepository;
+
+public class UserService {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	public List<User> findAll(){
+		return userRepository.findAll();
+	}
+
+}

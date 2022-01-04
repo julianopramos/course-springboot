@@ -292,3 +292,18 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-04 14:31:04.258
 !MESSAGE executing callback sts4.classpath.roHOyZJS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-04 15:39:18.560
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-04 15:39:18.565
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-04 15:39:18.570
+!MESSAGE buffering callback sts4.classpath.roHOyZJS course false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-04 15:39:18.570
+!MESSAGE executing callback sts4.classpath.roHOyZJS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-04 15:39:18.602
+!MESSAGE executing callback sts4.classpath.roHOyZJS SUCCESS [done]
