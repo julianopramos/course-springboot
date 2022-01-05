@@ -1,0 +1,24 @@
+package br.com.fasttrack.course.entities;
+
+import br.com.fasttrack.course.entities.pk.OrderItemPK;
+
+public class OrderItem {
+	
+	private OrderItemPK id;
+	private Integer quantity;
+	private Double price;
+	
+	public OrderItem() {
+		
+	}
+
+	public OrderItem(Integer quantity, Double price) {
+		this.quantity = quantity;
+		this.price = price;
+	}
+	
+	
+	
+	
+
+}
