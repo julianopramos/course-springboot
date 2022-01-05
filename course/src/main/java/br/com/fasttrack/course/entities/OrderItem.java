@@ -7,6 +7,8 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import br.com.fasttrack.course.entities.pk.OrderItemPK;
 
 @Entity
@@ -15,7 +17,7 @@ public class OrderItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@EmbeddedId
-	private OrderItemPK id;
+	private OrderItemPK id = new OrderItemPK();
 	
 	private Integer quantity;
 	private Double price;
@@ -24,13 +26,15 @@ public class OrderItem implements Serializable {
 		
 	}
 
-	public OrderItem(Product product, Order order, Integer quantity, Double price) {
+	public OrderItem(Order order, Product product, Integer quantity, Double price) {
+		id.setOrder(order);
+		id.setProduct(product);	
 		this.quantity = quantity;
 		this.price = price;
-		id.setOrder(order);
-		id.setProduct(product);
+		
 	}
 	
+	@JsonIgnore
 	public Order getOrder() {
 		return id.getOrder();
 	}
@@ -62,7 +66,7 @@ public class OrderItem implements Serializable {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
