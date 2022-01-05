@@ -105,8 +105,15 @@ public class Order implements Serializable {
 	public String toString() {
 		return "Order [id=" + id + ", moment=" + moment + ", client=" + client + "]";
 	}
-
 	
+	public Double getTotal() {
+		double t = 0;
+		for (OrderItem oi : items) {
+			t += oi.getSubTotal();
+		}
+		return t;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
