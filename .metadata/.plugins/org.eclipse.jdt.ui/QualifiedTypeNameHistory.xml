@@ -56,5 +56,7 @@
     <fullyQualifiedTypeName name="java.time.Instant"/>
     <fullyQualifiedTypeName name="br.com.fasttrack.course.resources.exceptions.StandardError"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.dao.DataIntegrityViolationException"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityNotFoundException"/>
     <fullyQualifiedTypeName name="br.com.fasttrack.course.services.exceptions.ResourceNotFoundException"/>
 </qualifiedTypeNameHistroy>
