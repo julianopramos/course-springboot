@@ -1,0 +1,5 @@
+package br.com.fasttrack.course.resources.exceptions;
+
+public class ResourceExceptionHandler {
+
+}
